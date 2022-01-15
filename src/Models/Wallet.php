@@ -1,7 +1,5 @@
 <?php
-
-namespace App\Models;
-
+namespace Fshangala\Cws\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class Wallet extends Model

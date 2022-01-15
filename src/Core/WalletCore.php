@@ -11,7 +11,6 @@ class WalletCore
                 "user_id"=>$user_id,
                 "status"=>"pending",
             ]);
-            echo $instance;
             return $instance;
         } catch (Exception $e) {
             throw $e;
