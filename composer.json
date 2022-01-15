@@ -1,0 +1,19 @@
+{
+    "name": "fshangala/cws",
+    "description": "A centralised wallet system to include in your project",
+    "type": "project",
+    "require": {},
+    "license": "GNU AGPL3",
+    "autoload": {
+        "psr-4": {
+            "Fshangala\\Cws\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "fshangala",
+            "email": "fshangala@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
