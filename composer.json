@@ -9,6 +9,13 @@
             "Fshangala\\Cws\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fshangala\\Cws\\CwsServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "fshangala",
