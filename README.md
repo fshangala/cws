@@ -14,7 +14,9 @@ After installation, register the service provider in your `bootstrap/app.php` fi
 //$app->register(App\Providers\EventServiceProvider::class);
 ```
 after the lines above in your `bootstrap/app.php file` add the following
-`$app->register(Fshangala\Cws\CwsServiceProvider::class);`
+```
+$app->register(Fshangala\Cws\CwsServiceProvider::class);
+```
 Then run the command `php artisan migrate` migrations should run.
 You're good to go!
 
