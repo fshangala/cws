@@ -3,7 +3,7 @@
     "description": "A centralised wallet system to include in your project",
     "type": "project",
     "require": {},
-    "license": "GNU AGPL3",
+    "license": "AGPL-3.0-or-later",
     "autoload": {
         "psr-4": {
             "Fshangala\\Cws\\": "src/"
