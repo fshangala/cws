@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "b4df5b70-428c-4fb9-860b-f921d5e86ba7",
+		"name": "cws",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create wallet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/wallet/create",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"wallet",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deposit request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "currency",
+							"value": "ZMW",
+							"type": "default"
+						},
+						{
+							"key": "debit",
+							"value": "200",
+							"type": "default"
+						},
+						{
+							"key": "reference",
+							"value": "deposit from airtel",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/wallet/deposit-request",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"wallet",
+						"deposit-request"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "approve transaction",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/wallet/approve-transaction",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"wallet",
+						"approve-transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "withdraw request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "currency",
+							"value": "ZMW",
+							"type": "text"
+						},
+						{
+							"key": "credit",
+							"value": "150",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/wallet/withdraw-request",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"wallet",
+						"withdraw-request"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "wallet_id",
+							"value": "2",
+							"type": "default"
+						},
+						{
+							"key": "currency",
+							"value": "ZMW",
+							"type": "default"
+						},
+						{
+							"key": "amount",
+							"value": "20",
+							"type": "default"
+						},
+						{
+							"key": "reference",
+							"value": "payment",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/wallet/transfer",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"wallet",
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transaction history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/wallet/transaction-history",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"wallet",
+						"transaction-history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get transaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/wallet/transaction",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"wallet",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "total balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/wallet/total-balance",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"wallet",
+						"total-balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "total wallet balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/wallet/total-wallet-balance",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"wallet",
+						"total-wallet-balance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
