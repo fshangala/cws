@@ -12,4 +12,8 @@ class Transaction extends Model
         'reference',
         'status'
     ];
+
+    public function wallet(){
+        return $this->belongsTo(Wallet::class);
+    }
 }
