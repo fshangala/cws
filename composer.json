@@ -1,7 +1,7 @@
 {
     "name": "fshangala/cws",
     "description": "A centralised wallet system to include in your project",
-    "type": "project",
+    "type": "library",
     "require": {},
     "license": "AGPL-3.0-or-later",
     "autoload": {
